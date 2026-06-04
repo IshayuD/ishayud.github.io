@@ -8,6 +8,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .edu-card {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .edu-logo {
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: #fff;
+      padding: 6px;
+      flex-shrink: 0;
+    }
+    .edu-logo.dark-bg {
+      background: #1a1e28;
+      padding: 4px;
+    }
+    .edu-body { flex: 1; min-width: 200px; }
+    .edu-right { margin-left: auto; }
+  </style>
 </head>
 <body>
 
@@ -16,30 +39,51 @@
       <div class="section-label">education</div>
       <h2>Academic Background</h2>
 
-      <div class="edu-card">
-        <div>
+      <!-- Stevens -->
+      <div class="edu-card" style="background: var(--bg3); border: 0.5px solid var(--border2); border-radius: 4px; padding: 2rem 2.5rem; margin-bottom: 1rem;">
+        <img src="images/stevens.png" alt="Stevens Institute of Technology logo" class="edu-logo dark-bg" />
+        <div class="edu-body">
           <div class="edu-school">Stevens Institute of Technology</div>
-          <div class="edu-degree">Master of Financial Engineering (MFE)</div>
+          <div class="edu-degree">Master of Science in Financial Engineering</div>
           <div class="edu-badges">
-            <span class="badge badge-blue">Quantitative Finance</span>
-            <span class="badge badge-blue">Derivatives Modeling</span>
-            <span class="badge badge-blue">Risk Management</span>
+            <span class="badge badge-gold">Quantitative Finance</span>
+            <span class="badge badge-gold">Derivatives Modeling</span>
+            <span class="badge badge-gold">Risk Management</span>
+            <span class="badge badge-gold">Algorithmic Trading Strategies</span>
           </div>
         </div>
-        <div class="edu-date">2026 – Present</div>
+        <div class="edu-right edu-date">Graduating December 2027</div>
       </div>
 
-      <div class="edu-card">
-        <div>
+      <!-- WPI -->
+      <div class="edu-card" style="background: var(--bg3); border: 0.5px solid var(--border2); border-radius: 4px; padding: 2rem 2.5rem; margin-bottom: 1rem;">
+        <img src="images/wpi.png" alt="Worcester Polytechnic Institute logo" class="edu-logo" />
+        <div class="edu-body">
           <div class="edu-school">Worcester Polytechnic Institute</div>
-          <div class="edu-degree">B.S. in Computer Science</div>
+          <div class="edu-degree">Bachelors of Science in Computer Science</div>
           <div class="edu-badges">
-            <span class="badge badge-gold">Presidential Scholar</span>
-            <span class="badge badge-gold">Dean's List</span>
-            <span class="badge badge-gold">Hackathon Winner 2024</span>
+            <span class="badge badge-red">Artificial Intelligence</span>
+            <span class="badge badge-red">Machine Learning</span>
+            <span class="badge badge-red">Software Engineering</span>
+            <span class="badge badge-red">Data Science</span>
           </div>
         </div>
-        <div class="edu-date">Dec 2025</div>
+        <div class="edu-right edu-date">Graduated December 2025</div>
+      </div>
+
+      <!-- DAIS -->
+      <div class="edu-card" style="background: var(--bg3); border: 0.5px solid var(--border2); border-radius: 4px; padding: 2rem 2.5rem; margin-bottom: 1rem;">
+        <img src="images/dais.png" alt="Dhirubhai Ambani International School logo" class="edu-logo" />
+        <div class="edu-body">
+          <div class="edu-school">Dhirubhai Ambani International School</div>
+          <div class="edu-degree">International Baccalaureate Diploma Programme</div>
+          <div class="edu-badges">
+            <span class="badge badge-blue">High School Program</span>
+            <span class="badge badge-blue">Programming Club</span>
+            <span class="badge badge-blue">Focus on Math Research Projects</span>
+          </div>
+        </div>
+        <div class="edu-right edu-date">Graduated June 2020</div>
       </div>
 
     </div>
