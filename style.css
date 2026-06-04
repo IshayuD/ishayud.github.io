@@ -128,7 +128,7 @@ h2 {
 .badge { font-size: 11.5px; padding: 3px 10px; border-radius: 2px; font-weight: 500; }
 .badge-gold { background: rgba(200,169,110,0.12); color: var(--accent); }
 .badge-blue { background: var(--tag-bg); color: var(--tag-text); }
-.badge-red { background: rgba(155, 54, 57, 0.35); color: var(--accent); }
+.badge-red { background: rgba(155, 54, 57, 0.4); color: #af2d35; }
 
 /* ── FOOTER ── */
 footer {
